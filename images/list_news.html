@@ -1,0 +1,25 @@
+
+{template "content","header"}
+  
+</div>
+  <div style="width:1120px; overflow:auto;margin:auto; background:#FFF">
+  
+  <div style="width:1110px;margin:5px 5px 0px 10px;"><img src="images/news_banner.jpg" /></div>
+  <div class="neirong"  style="width:280px; height:925px; margin-top:10px;"><img src="images/lift.jpg" /></div>
+  <div class="neirong"  style="width:756px;margin:5px 5px 0px 10px;">
+  <div style="height:30px; margin-top:10px;"> <a href="{siteurl($siteid)}">首页</a><span> &gt; </span>{catpos($catid)}</div>
+    	<div style="border-bottom:dotted 1px #000; height:155px;margin-top:10px;">
+        	<div style="width:204px;height:135px;float:left;padding-left:10px;"><img src="{$r[thumb]}" width="204" height="135" /></div>
+            <div style="padding-left:230px;">
+            	<div style="color:#105189; font-size:16px;font-weight:700;">{$r[title]}</div>
+                <div>{date('Y-m-d',$r[inputtime])}</div>
+                <div>{$r[description]}</div>
+            </div>
+        </div>
+  
+   </div>
+   
+</div>
+
+  
+{template "content","footer"}

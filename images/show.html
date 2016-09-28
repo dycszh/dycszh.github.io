@@ -1,0 +1,63 @@
+{template "content","header"}
+  <div style="width:1120px; overflow:auto;margin:auto; background:#FFF">
+  
+  <div style="width:1110px;margin:5px 5px 0px 10px;"><img src="images/news_banner.jpg" /></div>
+
+
+<div class="neirong"  style="width:280px;  margin-top:10px;">
+  
+ <div>
+  
+ <div style=" background-image:url(images/lift_news.jpg); width:210px; height:40px; padding-left:45px; line-height:34px; font-size:14px; color:#FFF; font-weight:600">新闻资讯</div>
+ 
+   <ul style=" list-style:url(images/dh_2.jpg);">
+   
+ 
+
+{pc:content action="category" catid="0" num="6" siteid="$siteid" order="listorder ASC" and catid="10"}
+ {loop $data $r}
+ <div style=" width:205px; margin-left:10px;background-color:#e9e9e9; padding:5px 0px 0 40px;line-height:24px;border-bottom: 1px dotted #a0a0a0;">
+<li id="pcm-hosting" class="greenbar"><a class="color2" href="{$r[url]}"
+      onclick="pcj_lnkNoipad('{$r[url]}'); return false;">
+      <span>{$r[catname]}</span> </a></li>
+ </div>
+                      {/loop}
+        {/pc}  
+
+
+   <ul>
+   
+  </div>
+   <div style=" background-image:url(images/lift_news.jpg); width:210px; height:40px; margin-top:10px; padding-left:45px; font-size:14px; font-weight:600; line-height:34px; color:#FFF;">捐赠账号</div>
+   <div style="background-color:#e9e9e9; width:233px; margin-left:10px; padding:6px 6px;">
+         <div style="background:#FFF; width:200px; height:120px; padding:10px 15px 0 10px; color:#ef3b3c; font-weight:500;line-height:28px;">
+         开户单位：
+         </br>
+         开户行：
+        </br>
+        捐赠账户：
+         </div>
+   
+   </div>
+  
+  </div>
+
+  <div class="neirong"  style="width:756px;margin:5px 5px 0px 10px;">
+  <div class="crumbs"><a href="{siteurl($siteid)}">首页</a><span> &gt; </span>{catpos($catid)} 正文</div>
+
+   <div style="float:left;width:705px;margin-top:30px;padding:20px;">
+   
+   <h1>{$title}<br />
+<span>{$inputtime}&nbsp;&nbsp;&nbsp;来源：{$copyfrom}&nbsp;&nbsp;&nbsp;评论：<a href="#comment_iframe" id="comment">0</a> 点击：</span><span id="hits"></span></h1>
+     <p>{$content}</p>
+   
+    <p class="f14">
+                <strong>上一篇：</strong><a href="{$previous_page[url]}">{$previous_page[title]}</a><br />
+                <strong>下一篇：</strong><a href="{$next_page[url]}">{$next_page[title]}</a>
+   </p>
+    </div>
+ </div>
+</div>
+  
+{template "content","footer"}
+

@@ -1,0 +1,59 @@
+/* 懒人图库 搜集整理 www.lanrentuku.com */
+
+* {
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+}
+
+/*General Mosaic Styles*/
+
+.mosaic-block {
+    float:left;
+    position:relative;
+    overflow:hidden;
+    width:174px;
+    height:105px;
+    margin:5px;
+   
+    border:1px solid #fff;
+   
+}
+
+
+.mosaic-overlay {
+    display:none;
+    z-index:5;
+    position:absolute;
+    width:100%;
+    height:5%;
+    background:#111;
+}
+
+
+
+
+
+.bar2 .mosaic-overlay {
+    bottom:-40px;
+    height:70px;
+    opacity:0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter:alpha(opacity=40);
+}
+
+.bar2 .mosaic-overlay:hover {
+    opacity:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter:alpha(opacity=60);
+}
+
+
+
+.clearfix{ display: block; height: 0; clear: both; visibility: hidden; }
+
+.details{ margin:15px 20px; }	
+h4{ font:200 14px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:60%; letter-spacing:0.1em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+
+a{ text-decoration:none; }

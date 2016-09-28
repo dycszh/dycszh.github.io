@@ -1,0 +1,86 @@
+
+
+html {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+	  
+	
+       z-index:9999;
+}
+
+
+
+
+
+nav ul {
+  list-style: none;
+  padding-left:0;
+ font-size: 15px;
+ font-family:'宋体';
+
+  
+}
+
+
+.nav {
+  width: 1120px;
+  margin: 0 auto;
+  
+  color: #f0f0f0;
+  
+}
+.nav a {
+  display: block;
+  padding: 0 22px;
+  line-height: inherit;
+  cursor: pointer;
+
+}
+.nav_menu {
+	background-color: #B80F08;
+  line-height: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing:-10px;
+}
+
+.nav_menu_spliter {
+  background-image: url(../../images/dh_spliter.png); 
+  background-repeat: no-repeat;
+  background-position:center;
+  width: 5px;
+  height: 38px;
+  font-size: 15px;
+ font-family:'宋体';
+  display: inline-block;
+  position: relative;
+  letter-spacing:1.7px;
+}
+
+.nav_menu-item {
+	 font-size: 15px;
+ font-family:'宋体';
+  display: inline-block;
+  position: relative;
+  letter-spacing:1.7px;
+
+}
+.nav_menu-item:hover {
+  background-color: #ef3b3c;
+ 
+}
+.nav_menu-item:hover .nav_submenu {
+  display: block;
+}
+.nav_submenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  width: 160px;
+  background-color: #ef3b3c;
+  
+}
+.nav_submenu-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}

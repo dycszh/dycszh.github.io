@@ -1,0 +1,312 @@
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<body onLoad="MM_preloadImages('images/left_meu1.jpg','images/left_meu_20.jpg','images/left_meu_30.jpg')">
+{template "content","header"}
+  <div style="width:1120px; overflow:auto;margin:auto; background:#FFF">
+  
+  
+   <div class="one" style="width:392px;margin:8px 5px 0px 5px;">
+   <!-- 代码 开始 -->
+   <div id="foucsBox" style="z-index:80;">
+        <ul class="imgCon">
+            <!--展示图片开始-->
+            <li><a href="http://www.lanrentuku.com/" target="_blank">
+                <img width="392" height="260" src="images/8.jpg" /></a>
+                <div class="imgTitle"><a href="http://www.lanrentuku.com/" target="_blank">东营慈善图文新闻</a></div>
+                <div class="showPage"></div>
+            </li>
+            <li><a href="http://www.lanrentuku.com/" target="_blank">
+          
+            <img width="392" height="260" src="images/9.jpg" /></a>
+                <div class="imgTitle"><a href="http://#/" target="_blank">东营慈善图文新闻频道</a></div>
+                <div class="showPage"></div>
+            </li>
+            <li><a href="http://#/" target="_blank">
+                <img width="392" height="260" src="images/7.jpg" /></a>
+                <div class="imgTitle"><a href="http://#/" target="_blank">东营慈善图文新闻频道</a></div>
+                <div class="showPage"></div>
+            </li>
+            <li><a href="http://#/" target="_blank">
+                <img width="392" height="260" src="images/4.jpg" /></a>
+                <div class="imgTitle"><a href="http://#/" target="_blank">东营慈善图文新闻频道</a></div>
+                <div class="showPage"></div>
+            </li>
+            <!--展示图片结束-->
+        </ul>
+        <div class="foucs"></div>
+        <div class="rBtn foucsButton">
+            <span></span>
+            <img />
+        </div>
+        <div class="lBtn foucsButton">
+            <span></span>
+            <img />
+        </div>
+    </div>
+    <!-- 代码 结束 -->
+</div>
+
+   <div class="two" style="margin:8px 10px 0px 5px;width:390px;">
+      
+        <div style=" background-image:url(images/top_news.jpg); line-height:33px;height:33px; font-size:14px; font-weight:600; color:#af000a;">&nbsp;&nbsp;&nbsp;新闻快讯</div>
+		<div>
+		
+		  <ul>
+		  {pc:content action="lists" catid="10" num="6" order="id DESC"}
+		   {loop $data $r}
+		  <div style="width:370px; height:25px;	line-height: 16px;	border-bottom: 1px dotted #a0a0a0; margin:10px 20px;"> 
+		  <div class="neirong" style="width:14px;"><img src="images/news_2.jpg" width="14" height="14" /></div>
+		 <div class="neirong" style="width:280px;"><a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+		 <div class="neirong" style="width:60px;">{date('Y-m-d',$r[inputtime])}</div> 
+          </div>
+		 {/loop}
+          
+		  {/pc}
+         </ul>
+	 </div>
+		
+   </div>
+   <div class="three" style="margin:8px 0 0 0;width:296px;">
+     <div style="background:url(images/top_1.jpg);  height:31px; padding-top:5px; color:#af000a">
+     
+     <div style="float:left; font-size:14px; font-weight:700; color:#af000a"> &nbsp;&nbsp;&nbsp;慈善公告 </div>
+     <div style=" float:right; width:60px;"><a class="color1" href="index.php?m=content&c=index&a=lists&catid=23">更多>></div>   
+     
+     
+      </div>
+     
+     <marquee  style="WIDTH: 280px; HEIGHT: 200px"  direction=up behavior="scroll" scrolldelay="300" onMouseOver="stop()"onmouseout="start()">
+         <div align="left" >
+
+     </div >
+     <center ><font face="黑体" color="#008000" size="14" ></font ></center >
+     <div align="left" style="line-height:12pt; padding:5px 20px;">
+
+
+       		  <ul>
+		  {pc:content action="lists" catid="10" num="6" order="id DESC"}
+		   {loop $data $r}
+		  <div style="width:370px; height:20px;	line-height: 14px; margin:10px 10px;"> 
+		  <div class="neirong" style="width:14px;"><img src="images/news_1.jpg" width="14" height="14" /></div>
+		 <div class="neirong" style="width:280px;"><a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+		 <div class="neirong" style="width:60px;">{date('Y-m-d',$r[inputtime])}</div> 
+          </div>
+		 {/loop}
+          
+		  {/pc}
+         </ul>
+         
+     </div >
+     </marquee>
+ 
+</div>
+<div class="clear"></div>
+
+
+<div class="cisan1" style="width:232px;height:258px;margin:10px 10px 10px 5px;">
+ <div style=" background-image:url(images/top_news12.jpg); height:29px; font-size:14px; font-weight:700;">
+    <div style=" float:left; margin-left:35px; width:90px;color:#FFF; line-height:29px;">捐赠方式</div>
+ </div>
+ 
+ <div style=" padding:10px 2px 0 0;">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','images/left_meu1.jpg',1)"><img src="images/left_meu.jpg" width="230" height="61" id="Image27"></a> </div>
+   
+    <div style=" padding:11px 2px 0 0;">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','images/left_meu_20.jpg',1)"><img src="images/left_meu_2.jpg" width="230" height="61" id="Image28"></a> </div>
+ 
+    <div style=" padding:11px 2px 0 0;">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','images/left_meu_30.jpg',1)"><img src="images/left_meu_3.jpg" width="230" height="61" id="Image29"></a> </div>  
+  </div>
+ 
+   <div class="cisan2" style="width:550px;height:258px;margin:10px 5px 10px 0px;">
+   
+  <div style="float:left; background-image:url(images/top_news3.jpg); height:31px; line-height:31px;font-size:14px; font-weight:700; color:#af000a;">&nbsp;&nbsp;&nbsp;慈善救助 </div>
+ <div style=" float:right; width:80px; font-size:12px;font-weight:300; line-height:29px;"><a class="color1" href="index.php?m=content&c=index&a=lists&catid=12">进入频道>></div> 
+   
+<div style="padding:0 5px 10px 8px;">
+
+ <!-- 代码 开始 -->
+     <div id="content">
+
+    <!--Circle-->
+    <!--Fade-->
+    <!--Bar-->
+    <!--Bar 2-->
+    <div class="mosaic-block bar2">
+        <a href="http://www.lanrentuku.com" target="_blank" class="mosaic-overlay">
+            <div class="details">
+                <h4>图片新闻</h4><br/>
+                <p>山东省东营市东营区 捐赠</p>
+            </div>
+        </a>
+        <div class="mosaic-backdrop"><img src="images/desroches.jpg"/></div>
+  </div>
+
+    <!--Bar 3-->
+    <!--Cover-->
+    <!--Cover 2-->
+    <!--Cover 3-->
+    <div class="clearfix"></div>
+</div>
+
+<script type="text/javascript" src="{CSS_PATH}lrtk.js">  </script>
+<!-- 代码 结束 -->
+
+</div>
+
+
+</div>
+   <div class="cisan3" style="width:296px;height:258px;margin:10px 0px 10px 5px;"><img src="images/erweima.jpg" width="296" height="258" /></div>
+   <div class="clear"></div>
+   <div style="width:1110px; overflow:auto;margin:0px 0px 0px 5px;"><img src="images/banner.jpg" width="1105" height="104" /></div>
+   
+    <div class="cisan1" style="width:390px;height:325px;margin:10px 10px 10px 5px;">
+    <div style=" background-image:url(images/top_news12.jpg); height:29px; font-size:14px; font-weight:700;">
+    <div style=" float:left; margin-left:35px; width:90px;color:#FFF; line-height:29px;">捐助公开</div>
+    <div style=" float:right; width:80px; font-size:12px;font-weight:300; line-height:29px;"><a class="color1" href="index.php?m=content&c=index&a=lists&catid=11">进入频道>></div>   
+   </div>
+    
+       <ul>
+		  {pc:content action="lists" catid="11" num="6" order="id DESC"}
+		   {loop $data $r}
+         <div style="width:370px; height:25px;	line-height: 16px;	border-bottom: 1px dotted #a0a0a0; margin:10px 20px;"> 
+		 <div class="neirong" style="width:14px;"><img src="images/news_1.jpg" width="14" height="14" /></div>
+		 <div class="neirong" style="width:280px;"><a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+		 <div class="neirong" style="width:60px;">{date('Y-m-d',$r[inputtime])}</div>   
+         
+		 </div>
+         
+         
+          {/loop}
+          
+		  {/pc}
+      </ul>
+    </div>
+   <div class="cisan2" style="width:390px;height:325px;margin:10px 5px 10px 0px;">
+   <div style=" background-image:url(images/top_news12.jpg); height:29px; font-size:14px; font-weight:700;">
+    <div style=" float:left; margin-left:35px; width:90px;color:#FFF; line-height:29px;">救助公开</div>
+      <div style=" float:right; width:80px; font-size:12px; font-weight:300; line-height:29px;"><a class="color1" href="index.php?m=content&c=index&a=lists&catid=12">进入频道>></div>   
+    
+   </div>
+  
+         <ul>
+		  {pc:content action="lists" catid="12" num="6" order="id DESC"}
+		   {loop $data $r} 
+         <div style="width:370px; height:25px;	line-height: 16px;	border-bottom: 1px dotted #a0a0a0; margin:10px 20px;"> 
+		 <div class="neirong" style="width:14px;"><img src="images/news_1.jpg" width="14" height="14" /></div>
+		 <div class="neirong" style="width:280px;"><a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+		 <div class="neirong" style="width:60px;">{date('Y-m-d',$r[inputtime])}</div>   
+         
+		 </div>
+         
+         
+          {/loop}
+          
+		  {/pc}
+         </ul>
+   </div>          
+   <div class="cisan3" style="width:296px;height:325px;margin:10px 0px 10px 5px; background:#f4f4f4;">
+   
+  <div style=" height:31px; background:url(images/top_news7.jpg); font-size:14px; font-weight:700; height:30px; line-height:30px;">
+   <div style=" float:left; margin-left:35px; width:90px; height:20px; color:#af000a;">慈善义工</div>
+   <div style=" float:right; width:60px; margin-top:10px;"><a href="index.php?m=content&c=index&a=lists&catid=13"><img src="images/more.jpg" width="45" height="11" /></a></div>   
+  </div>
+  <div style=" width:262px; height:130px; margin:auto; padding:15px 15px;"><img src="images/top_news7_1.jpg" width="262" height="130" /></div>
+  
+          <ul>
+		  {pc:content action="lists" catid="13" num="6" order="id DESC"}
+		   {loop $data $r} 
+          <div class="neirong" style="width:14px; margin-left:15px;"><img src="images/news_3.png" width="14" height="14" /></div>
+          <div class="neirong" style="width:260px;"><a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+          
+          {/loop}
+          
+		  {/pc}
+         </ul> 
+          
+    </div>
+   <div class="clear"></div>
+   
+   
+   <div class="cisan1" style="width:390px;height:260px;margin:0px 10px 10px 5px;">
+      <div style="background-image:url(images/top_news9.jpg); font-size:14px; font-weight:700; height:30px; line-height:30px; color:#af000a">
+   <div style=" float:left; margin-left:35px; width:90px; height:20px;">政策法规</div>
+   <div style=" float:right; width:60px; margin-top:10px;"><a href="index.php?m=content&c=index&a=lists&catid=16"><img src="images/more.jpg" width="45" height="11" /></a></div>  
+   </div>
+   
+          <ul>
+		  {pc:content action="lists" catid="16" num="6" order="id DESC"}
+		   {loop $data $r} 
+         <div style="width:370px; height:25px;	line-height: 16px;	border-bottom: 1px dotted #a0a0a0; margin:10px 20px;"> 
+		 <div class="neirong" style="width:14px;"><img src="images/news_1.jpg" width="14" height="14" /></div>
+		 <div class="neirong" style="width:280px;"> <a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+		 <div class="neirong" style="width:60px;">{date('Y-m-d',$r[inputtime])}</div>   
+		 </div>
+         {/loop}
+          
+		  {/pc}
+         </ul>
+   </div>
+   
+<div class="cisan2" style="width:390px;height:260px;margin:0px 5px 10px 0px;">
+   <div style="background-image:url(images/top_news9.jpg); font-size:14px; font-weight:700; height:30px; line-height:30px; color:#af000a">
+   <div style=" float:left; margin-left:35px; width:90px; height:20px;">慈善文化</div>
+   <div style=" float:right; width:60px; margin-top:10px;"><a href="#"><img src="images/more.jpg" width="45" height="11" /></a></div>  
+   </div>
+   
+           <ul>
+		  {pc:content action="lists" catid="14" num="6" order="id DESC"}
+		   {loop $data $r} 
+ 
+          <div style="width:370px; height:25px;	line-height: 16px;	border-bottom: 1px dotted #a0a0a0; margin:10px 20px;"> 
+		 <div class="neirong" style="width:14px;"><img src="images/news_1.jpg" width="14" height="14" /></div>
+		 <div class="neirong" style="width:280px;">  <a target="_blank" href="{$r[url]}"><li><span></span>{str_cut($r[title],58)}</li></a></div>
+		 <div class="neirong" style="width:60px;">{date('Y-m-d',$r[inputtime])}</div>   
+		 </div>
+          {/loop}
+          
+		  {/pc}
+         </ul>
+   
+</div>
+   
+   
+   <div class="cisan3" style="width:296px;height:260px;margin:0px 0px 10px 5px; background-color:#f4f4f4; background-image:url(images/tel_bg.jpg)">
+   <div style="background-image:url(images/top_news10.jpg); height:31px; font-size:14px; font-weight:700; padding-top:5px; color:#af000a"> &nbsp;&nbsp;联系方式</div>
+   <div style=" color:#333333;  margin:20px 10px 0 100px; line-height:26px;"> 东营市慈善总会  8333870
+     <br>
+     东营区慈善总会  8232190<br>
+河口区慈善总会  3659190
+<br>
+广饶县慈善总会  6457870<br>
+垦利县慈善总会  2582110
+<br>
+利津县慈善总会  5626190</div>
+   
+   </div>
+   <div class="clear"></div>
+   <div style="width:1110px; overflow:auto;margin:0px 0px 10px 5px;"><img src="images/foot.jpg" width="1100" height="104" /></div>  
+  </div>
+{template "content","footer"}
+
