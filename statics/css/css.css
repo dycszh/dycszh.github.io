@@ -132,7 +132,7 @@ p.tip span {
 	}
 
 .p_content {
-	text-indent: 2em;
+	/* text-indent: 2em; */
 	font-size: 1.2em;
 	line-height:180%;
 }
